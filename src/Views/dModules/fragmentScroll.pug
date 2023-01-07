@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet",href="/Public/dModules/fragmentScroll.css")
+        script(src="https://code.jquery.com/jquery-3.6.3.min.js",
+               integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=",
+               crossorigin="anonymous")
+        title wellcome to do JS sandbox PAGE : Chat Messages Fragment scrolling
+    body 
+        div(class="container")
+            h1(class="header") Chat Messages Container
+            ul(class="messages")
+            ul
+                li 1. 기본으로 스크롤 뷰를 맨 아래로 보낸다.
+                li 2. container element들의 flex방향을 동적으로 정할 수 있다. "flex-direction: column / column-reverse"
+                li 3. 메세지 앞에 manual anchoring(수동 고정 기능)이 추가 될 때 컨텐츠 점핑 방지
+                li 4. 프리로딩으로 이미지들을 로딩 할 때 컨텐츠 점핑 방지
+    script(src="/Public/dModules/fragmentScroll.js")

@@ -2,13 +2,19 @@
   "name": "djs-sandbox",
   "version": "1.0.0",
   "description": "javascript base의 toyProject들을 통합적으로 시행하는 페이지",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "doil",
   "license": "ISC",
+
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.7",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.20"
+  },
   "dependencies": {
     "express": "^4.18.2",
     "http": "^0.0.1-security",

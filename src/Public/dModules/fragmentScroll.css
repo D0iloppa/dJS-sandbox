@@ -1,0 +1,55 @@
+.container {
+    font-family: Arial;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header {
+    font-weight: 600;
+    color: teal;
+  }
+  
+  .loading {
+    text-align: center;
+  }
+  
+  .messages {
+    display: flex;
+    border: 1px solid teal;
+    overflow: auto;
+    font-size: 24px;
+    width: 500px;
+    max-width: 450px;
+    height: 50%;
+    max-height: 300px;
+    border-radius: 4px;
+    padding: 4px;
+  }
+  
+  @supports (overflow-anchor: auto) {
+    .messages {
+      flex-direction: column;
+    }
+  }
+  
+  @supports not (overflow-anchor: auto) {
+    .messages {
+      flex-direction: column-reverse;
+    }
+  }
+  
+  .textMessage {
+    color: teal;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .imageMessage {
+    width: 40%;
+    height: auto;
+  }
+  
