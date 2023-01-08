@@ -194,11 +194,13 @@ function messageDataLoad(){
   // 메시지가 비어 있는 경우 확인
   // msgList = [];
 }
-
+/**
+ * 
+ */
 function initMessageID(){
   // 메시지 커서 id
   // 역순의 리스트를 순회한다.
-  // 배열접근이기 때문에 total count -1의 값으로 해야한다.
+  // 배열접근이기 때문에 (total count -1)의 값으로 해야한다.
   messageID = msgList.length - 1;
 }
 

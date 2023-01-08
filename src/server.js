@@ -26,6 +26,7 @@ const d_Server = express();
 d_Server.set('view engine', "pug");
 d_Server.set("views",__dirname + "/views");
 d_Server.use("/public",express.static(__dirname + "/public"));
+d_Server.use("/module",express.static(__dirname + "/Public/dModules"));
 
 /**
 

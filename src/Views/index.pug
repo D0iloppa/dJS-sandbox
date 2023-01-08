@@ -6,10 +6,17 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title wellcome to do JS sandbox PAGE
     body 
-        script(src="/Public/js/app.js")
+        //script(src="/Public/js/app.js")
         h1 HELL-Oh, WORLD! 🤠
-        div 
+        div
+            ul
+                h2(style="")  MODULE LIST
+                li(style="margin-top:10px;") 
+                    button(onClick="location.href='/fragmentScroll.test'") fragmentScroll
+                    span(style="margin-left:10px;") : 프래그먼트 단위의 virtucal scroll 로딩 모듈
+        //div 
             div(id="chatArea" style="border:solid 1px black; width:1000px; overflow:auto; max-height:300px; height:300px;")
             div(style="display:flex;") 
                 input(id="inputBox", style="margin-top:auto;margin-bottom:auto;")
                 button(id="sendMsgBtn" , style="margin-left:10px;" , onclick="sendBtn()") send
+        

@@ -53,3 +53,12 @@
     height: auto;
   }
   
+
+  .code{
+    display: flex; 
+    border: 1px solid teal; 
+    overflow: auto;                       
+    height: 50%;                            
+    border-radius: 4px;                           
+    padding: 4px;
+  }
