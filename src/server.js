@@ -84,7 +84,7 @@ const handleListen = () =>{
       console.log(`
       ##########################################################
         😎 Wellcome to DOIL's dev SERVER (by express) 😎
-        🐳 Server listening on port ${d_Conf.port}
+        🐳 Server listening on local port ${d_Conf.port}
         site : http://${d_Conf.domain}:${d_Conf.oPort}/
       ##########################################################
       `);

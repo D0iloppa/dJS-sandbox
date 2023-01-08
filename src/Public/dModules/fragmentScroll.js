@@ -104,7 +104,7 @@ let observer = new IntersectionObserver(observerCallback, {
 observer.observe(observerTargetNode);
 
 /* Rendering logic */
-async function initialRender() {
+async function fragmentInit() {
   const fragment = await getNewMessageNodes();
   addNodeToParent(fragment, messagesNode);
 
@@ -118,11 +118,44 @@ async function initialRender() {
     });
   });
 }
+/////////////////////////////////////////////////////////////////////////
 
+
+
+
+/* 연동 부분 */
+//DB대신하는 dummy msgList
 let msgList = [];
+const limit = 5; // 한 프래그먼트에 들어가는 아이템의 수(max)
 
+
+// document ready
+$(function(){
+  console.log("dcmt ready");
+
+  // DB에서 전체 데이터 가져오는 부분
+  // 실제 작동에는 영향 없는 부분
+  // DB없이 스크립트상에서 전체 데이터 dummyList 만들어주는 부분
+  messageDataLoad();
+  initMessageID();
+
+  // 시작
+  fragmentInit();
+
+});
+
+
+
+
+/**
+ * [데이터 로딩]
+ * DB에서 전체 데이터 가져오는 부분
+ * 실제 작동에는 영향 없는 부분
+ * DB없이 스크립트상에서 전체 데이터 dummyList 만들어주는 부분
+ */
 function messageDataLoad(){
   // 메시지 데이터 리스트 로딩
+  // 실제 DB값에 해당
   msgList = [
     {user_id : "doil"  , msg : "안녕하세요" },
     {user_id : "doil2" , msg : "안녕하세요2" },
@@ -160,33 +193,63 @@ function messageDataLoad(){
 
   // 메시지가 비어 있는 경우 확인
   // msgList = [];
+}
 
-  // 메시지 커서 id (역순, total count)
+function initMessageID(){
+  // 메시지 커서 id
+  // 역순의 리스트를 순회한다.
+  // 배열접근이기 때문에 total count -1의 값으로 해야한다.
   messageID = msgList.length - 1;
 }
 
+/**
+ * DB에서 리스트를 가져오는 부분
+ */
+function getMessagesByLimit(){
+  let tmpList = [];
+  /* 
+  * 현재 for문 부분, 실제 DB에서 select하는 부분으로 구현하면 됨
+  * DB에서는 역순으로 가져와주면 된다. (order by DESC)
+  * 실제 작동시 맨 위의 row가 container에서 제일 하단에 위치하게 된다.
+  * 
+  *  [DB에 들어가는 인자값]
+     @ limit     : limit
+     @ messageID : offset
+  */
+ for(let i=0 ; i<limit ; i++){
+    const data = msgList[messageID-i];
+    if(data){
+      tmpList.push(data);
+    }
+ }
+
+
+
+ console.log(`tmpSize : ${tmpList.length}` , tmpList);
+
+  return tmpList;
+
+
+}
 
 
 // 한 스크롤에 찍힐 fragment 생성
 async function getNewMessageNodes() {
 
   const fragment = document.createDocumentFragment();
-  /*
-  for (let i = 0; i < 9; i++) {
-    const text = createTextMessageNode();
-    addNodeToParent(text, fragment);
-  }
-  const image = await createImageMessageNode();
-  addNodeToParent(image, fragment);
-  */
 
   // 데이터 값
   let successCnt = 0;
-  for(let i=0; i<fragmentOffset ; i++){
-    const msgData = msgList[messageID];
+
+  // fragment limit만큼 node 생성 및 추가
+  const tmpMsgList = getMessagesByLimit();
+
+  for(let i=0; i<limit ; i++){
+    const msgData = tmpMsgList[i];
 
     // 메시지 아이템 생성
-    const item = createMessageNode(msgData);
+    const item = await createMessageNode(msgData);
+
     // 아이템이 존재하는 경우 프래그먼트에 아이템 추가
     if(item) {
       addNodeToParent(item, fragment);
@@ -200,9 +263,11 @@ async function getNewMessageNodes() {
 }
 
 // 메시지 데이터 노드 엘리먼트 생성
-function createMessageNode(data){
-  console.log(data);
+async function createMessageNode(data){
+  
   if(!data) return false;
+
+  console.log(data);
 
 
   const item = $("<li class='row textMessage' />")
@@ -238,19 +303,3 @@ function createMessageNode(data){
 
   return item[0]; // 제이쿼리로 생성한 실제 html element를 리턴해줘야 한다.
 }
-
-
-
-// 한 프래그먼트에 들어가는 아이템의 수(max)
-const fragmentOffset = 5;
-
-// document ready
-$(function(){
-  console.log("dcmt ready");
-
-  messageDataLoad();
-
-  initialRender();
-
-});
-
