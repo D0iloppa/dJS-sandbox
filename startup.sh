@@ -1,5 +1,14 @@
-# awk는 파일로부터 레코드(record)를 선택하고, 선택된 레코드에 포함된 값을 조작하거나 데이터화하는 것을 목적
-# 2>&1 means: stderr also goes to the stdout
-# & at the end means: run this command as a background task.
+#!/bin/bash
 
-nohup npm run dev > ./server.log  2>&1 &
+# Set environment variables if needed
+export NODE_ENV=production
+
+# Start the Node.js app with nohup
+#nohup babel-node src/server.js > app.log 2>&1 &
+nohup npm rum dev > app.log 2>&1 &
+
+# Save the process ID to a file for use in the shutdown script
+echo $! > app.pid
+
+# Display a message indicating the app has started
+echo "App started with PID `cat app.pid`"

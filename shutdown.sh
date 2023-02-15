@@ -1,7 +1,13 @@
-// kill_dev.sh
-HERE=$( cd "$(dirname "$0")" ; pwd )
-cd $HERE
-cd "svelte"
- 
-kill -9 `cat $HERE/save_pid.txt`
-rm "$HERE/save_pid.txt"
+#!/bin/bash
+
+# Find the process ID of the node process and kill it
+pid=`ps -ef | grep "babel-node src/server.js" | grep -v grep | awk '{print $2}'`
+if [ -n "$pid" ]; then
+  echo "Killing process $pid"
+  kill -9 $pid
+else
+  echo "No process found"
+fi
+
+echo "Server stopped!"
+

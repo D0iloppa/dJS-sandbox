@@ -1,4 +1,6 @@
 {
+    "watch": ["src"],
+    "ext": "js,json",
     "ignore" : ["src/public/*"],
     "exec" : "babel-node src/server.js"
 }

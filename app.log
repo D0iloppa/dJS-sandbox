@@ -1,47 +1,45 @@
 
 > djs-sandbox@1.0.0 dev
-> nodemon
+> nodemon --exec babel-node src/server.js
 
 [33m[nodemon] 2.0.20[39m
 [33m[nodemon] to restart at any time, enter `rs`[39m
-[33m[nodemon] watching path(s): *.*[39m
-[33m[nodemon] watching extensions: js,mjs,json[39m
+[33m[nodemon] watching path(s): src/**/*[39m
+[33m[nodemon] watching extensions: js,json[39m
 [32m[nodemon] starting `babel-node src/server.js`[39m
 
       ##########################################################
+        [started at : 2023. 2. 16. 목요일 오전 1:39:56]
         😎 Wellcome to DOIL's dev SERVER (by express) 😎
         🐳 Server listening on local port 13939
-        site : http://doiloppa.chickenkiller.com:80/
+        site : http://doiloppa.chickenkiller.com:80/node/
       ##########################################################
       
-
-> djs-sandbox@1.0.0 dev
-> nodemon
-
-[33m[nodemon] 2.0.20[39m
-[33m[nodemon] to restart at any time, enter `rs`[39m
-[33m[nodemon] watching path(s): *.*[39m
-[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `babel-node src/server.js`[39m
 
       ##########################################################
+        [started at : 2023. 2. 16. 목요일 오전 1:40:08]
         😎 Wellcome to DOIL's dev SERVER (by express) 😎
         🐳 Server listening on local port 13939
-        site : http://doiloppa.chickenkiller.com:80/
+        site : http://doiloppa.chickenkiller.com:80/node/
       ##########################################################
       
-
-> djs-sandbox@1.0.0 dev
-> nodemon
-
-[33m[nodemon] 2.0.20[39m
-[33m[nodemon] to restart at any time, enter `rs`[39m
-[33m[nodemon] watching path(s): *.*[39m
-[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `babel-node src/server.js`[39m
 
       ##########################################################
-        [started at : 2023. 2. 15. 수요일 오전 10:44:40]
+        [started at : 2023. 2. 16. 목요일 오전 1:40:33]
+        😎 Wellcome to DOIL's dev SERVER (by express) 😎
+        🐳 Server listening on local port 13939
+        site : http://doiloppa.chickenkiller.com:80/node/
+      ##########################################################
+      
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `babel-node src/server.js`[39m
+
+      ##########################################################
+        [started at : 2023. 2. 16. 목요일 오전 1:40:42]
         😎 Wellcome to DOIL's dev SERVER (by express) 😎
         🐳 Server listening on local port 13939
         site : http://doiloppa.chickenkiller.com:80/node/

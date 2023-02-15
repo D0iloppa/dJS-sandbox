@@ -35,10 +35,6 @@ d_Server.use(`/${d_Conf.context_root}`, router);
 d_Server.set('view engine', "pug");
 d_Server.set("views",__dirname + "/views");
 
-
-d_Server.use(`/${d_Conf.context_root}/public`,express.static(__dirname + "/public"));
-
-// d_Server.use(`/${d_Conf.context_root}/module`,express.static(__dirname + "/Public/dModules"));
 router.use('/module' , express.static(__dirname + "/Public/dModules"));
 
 /**
@@ -93,6 +89,7 @@ router.get("/*", (req,res) => res.redirect("/"));
 
 // listen handler
 const handleListen = () =>{
+
   const timeOption = {
     weekday: "long",
     year: "numeric",
@@ -122,4 +119,4 @@ const handleListen = () =>{
 }
 
 
-d_Server.listen(d_Conf["port"] , handleListen);
+d_Server.listen(d_Conf["port"] , "0.0.0.0", handleListen);
