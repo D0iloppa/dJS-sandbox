@@ -11,7 +11,7 @@ const d_Conf = {
   // @ domain
   "domain" : "doiloppa.chickenkiller.com",
   // @ http port
-  "port" : 3939,
+  "port" : 13939,
   // @ outter port
   "oPort" : 80,
   // @ https port (secure)
@@ -26,7 +26,7 @@ const d_Server = express();
 d_Server.set('view engine', "pug");
 d_Server.set("views",__dirname + "/views");
 d_Server.use("/public",express.static(__dirname + "/public"));
-d_Server.use("/module",express.static(__dirname + "/Public/dModules"));
+d_Server.use("/node/module",express.static(__dirname + "/Public/dModules"));
 
 /**
 
@@ -60,15 +60,17 @@ d_Server.use("/module",express.static(__dirname + "/Public/dModules"));
 
  */
 
-d_Server.get("/", (req,res)=>{
+d_Server.get("/node/", (req,res)=>{
   res.render("index");
 });
 
-d_Server.get("/fragmentScroll.test", (req,res)=>{
+d_Server.get("/node/fragmentScroll.test", (req,res)=>{
   res.render("dModules/fragmentScroll");
 });
 
-
+d_Server.get("/node/fingerPrint.test", (req,res)=>{
+  res.render("dModules/fingerPrint");
+});
 
 
 // catchall
