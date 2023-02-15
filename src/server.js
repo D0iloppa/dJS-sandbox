@@ -4,6 +4,8 @@ import https from "https";
 import WebSocket from "ws";
 import express from "express";
 
+const router = express.Router(); // subcontext 정의를 위함
+
 
 const d_Conf = {
   // @ Protocol
@@ -15,18 +17,29 @@ const d_Conf = {
   // @ outter port
   "oPort" : 80,
   // @ https port (secure)
-  "ssl_Port" : 443
+  "ssl_Port" : 443,
+  // @ 해당 app의 context path
+  "context_root" : "node"
 };
 
 
 const d_Server = express();
+
+d_Server.use(`/${d_Conf.context_root}`, router);
+
 /**
  * [view,static resources] set-up
  */
+
+
 d_Server.set('view engine', "pug");
 d_Server.set("views",__dirname + "/views");
-d_Server.use("/public",express.static(__dirname + "/public"));
-d_Server.use("/node/module",express.static(__dirname + "/Public/dModules"));
+
+
+d_Server.use(`/${d_Conf.context_root}/public`,express.static(__dirname + "/public"));
+
+// d_Server.use(`/${d_Conf.context_root}/module`,express.static(__dirname + "/Public/dModules"));
+router.use('/module' , express.static(__dirname + "/Public/dModules"));
 
 /**
 
@@ -60,35 +73,47 @@ d_Server.use("/node/module",express.static(__dirname + "/Public/dModules"));
 
  */
 
-d_Server.get("/node/", (req,res)=>{
+ router.get(`/`, (req,res)=>{
   res.render("index");
 });
 
-d_Server.get("/node/fragmentScroll.test", (req,res)=>{
+router.get(`/fragmentScroll.test`, (req,res)=>{
   res.render("dModules/fragmentScroll");
 });
 
-d_Server.get("/node/fingerPrint.test", (req,res)=>{
+router.get(`/fingerPrint.test`, (req,res)=>{
   res.render("dModules/fingerPrint");
 });
 
 
 // catchall
-d_Server.get("/*", (req,res) => res.redirect("/"));
+router.get("/*", (req,res) => res.redirect("/"));
 
 ////////////////////* routing section end */
 
 // listen handler
 const handleListen = () =>{
+  const timeOption = {
+    weekday: "long",
+    year: "numeric",
+    month: "numeric",
+    day:"numeric",
+    hour:"numeric",
+    minute:"numeric",
+    second:"numeric",
+  };
+
+  const startTime = new Date();
   switch(d_Conf["protocol"]){
     case "https":
       break;
     case "http":
       console.log(`
       ##########################################################
+        [started at : ${startTime.toLocaleDateString("ko-kr", timeOption)}]
         😎 Wellcome to DOIL's dev SERVER (by express) 😎
         🐳 Server listening on local port ${d_Conf.port}
-        site : http://${d_Conf.domain}:${d_Conf.oPort}/
+        site : http://${d_Conf.domain}:${d_Conf.oPort}/${d_Conf.context_root}/
       ##########################################################
       `);
       default:
