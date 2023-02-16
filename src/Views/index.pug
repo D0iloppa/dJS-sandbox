@@ -12,11 +12,14 @@ html(lang="en")
             ul
                 h2(style="")  MODULE LIST
                 li(style="margin-top:10px;") 
-                    button(onClick="location.href='/node/fragmentScroll.test'") fragmentScroll
+                    button(onClick="location.href='./fragmentScroll.test'") fragmentScroll
                     span(style="margin-left:10px;") : 프래그먼트 단위의 virtucal scroll 로딩 모듈
                 li(style="margin-top:10px;") 
-                    button(onClick="location.href='/node/fingerPrint.test'") fingerPrint
+                    button(onClick="location.href='./fingerPrint.test'") fingerPrint
                     span(style="margin-left:10px;") : get fingerprinting, bot detection on javascript
+                li(style="margin-top:10px;") 
+                    button(onClick="location.href='./macroProtect.test'") macroProtect
+                    span(style="margin-left:10px;") : 매크로 차단
         //div 
             div(id="chatArea" style="border:solid 1px black; width:1000px; overflow:auto; max-height:300px; height:300px;")
             div(style="display:flex;") 

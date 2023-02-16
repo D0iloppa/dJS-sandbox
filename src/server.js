@@ -3,6 +3,11 @@ import https from "https";
 
 import WebSocket from "ws";
 import express from "express";
+import bodyParser from "body-parser";
+import cookieParser from "cookie-parser";
+
+const isBot = require('./dRepo/isBot');
+
 
 const router = express.Router(); // subcontext 정의를 위함
 
@@ -34,8 +39,10 @@ d_Server.use(`/${d_Conf.context_root}`, router);
 
 d_Server.set('view engine', "pug");
 d_Server.set("views",__dirname + "/views");
-
+d_Server.set('view cache', false);
 router.use('/module' , express.static(__dirname + "/Public/dModules"));
+router.use(cookieParser());
+router.use(bodyParser.urlencoded({ extended: true }));
 
 /**
 
@@ -74,11 +81,53 @@ router.use('/module' , express.static(__dirname + "/Public/dModules"));
 });
 
 router.get(`/fragmentScroll.test`, (req,res)=>{
-  res.render("dModules/fragmentScroll");
+  res.render("dModules/fragmentScroll/fragmentScroll");
 });
 
 router.get(`/fingerPrint.test`, (req,res)=>{
-  res.render("dModules/fingerPrint");
+  res.render("dModules/fingerPrint/fingerPrint");
+});
+
+router.get(`/macroProtect.test`, (req,res)=>{
+  res.render("dModules/macroProtect/macroMain");
+});
+/*
+const isBot = (req) => {
+  const userAgent = req.headers['user-agent'];
+  return /bot|crawler|spider|googlebot|facebookbot|slurp|bingbot|yandex|yeti/i.test(userAgent);
+};
+*/
+router.post("/macroTest.test" , (req,res)=>{
+  //console.log(req.headers);
+  const cookieHash = JSON.parse(req.cookies.fingerPrint);
+  console.log(cookieHash.hashId);
+
+  if(!cookieHash.hashId) {
+    res.status(400).send("Can't identify the fingerprint");
+    return;
+  }
+  
+  const ipAddress = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  const botChk = isBot(req.headers['user-agent']) ? "bot" : "user";
+
+  console.log(`user-agent : ${req.headers["user-agent"]}`);
+  console.log(`referer : ${req.headers["referer"]}`);
+  console.log(`client-ip : ${ipAddress}`);
+  console.log(`client is : ${botChk}`);
+  
+  const getDatas = req.body;
+  console.log(req.body);
+  // console.log(`headers: ${JSON.stringify(req.headers, null, 2)}`);
+
+  res.render("dModules/macroProtect/macroTest", { 
+    "title" : "Macro Test",
+    "botChk" : botChk, 
+    "ipAddress" : ipAddress,
+    "user_agent" : req.headers["user-agent"],
+    "referer" : req.headers["referer"],
+    "params" : JSON.stringify(getDatas)
+  });
+
 });
 
 

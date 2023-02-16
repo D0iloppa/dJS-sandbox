@@ -9,7 +9,1571 @@
 [32m[nodemon] starting `babel-node src/server.js`[39m
 
       ##########################################################
-        [started at : 2023. 2. 16. 목요일 오전 1:39:56]
+        [started at : 2023. 2. 16. 목요일 오후 4:04:53]
+        😎 Wellcome to DOIL's dev SERVER (by express) 😎
+        🐳 Server listening on local port 13939
+        site : http://doiloppa.chickenkiller.com:80/node/
+      ##########################################################
+      
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+<ref *2> IncomingMessage {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 16384,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: [],
+    flowing: true,
+    ended: true,
+    endEmitted: true,
+    reading: false,
+    constructed: true,
+    sync: false,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    errorEmitted: false,
+    emitClose: true,
+    autoDestroy: true,
+    destroyed: false,
+    errored: null,
+    closed: false,
+    closeEmitted: false,
+    defaultEncoding: 'utf8',
+    awaitDrainWriters: null,
+    multiAwaitDrain: false,
+    readingMore: false,
+    dataEmitted: true,
+    decoder: null,
+    encoding: null,
+    [Symbol(kPaused)]: false
+  },
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  socket: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _closeAfterHandlingError: false,
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: false,
+      endEmitted: false,
+      reading: true,
+      constructed: true,
+      sync: false,
+      needReadable: true,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      destroyed: false,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: false,
+      dataEmitted: false,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      timeout: [Function: socketOnTimeout],
+      data: [Function: bound socketOnData],
+      error: [Function: socketOnError],
+      close: [Array],
+      drain: [Function: bound socketOnDrain],
+      resume: [Function: onSocketResume],
+      pause: [Function: onSocketPause]
+    },
+    _eventsCount: 8,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: false,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '4:0.0.0.0:13939',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 8,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 297,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 5,
+        [Symbol(triggerId)]: 1
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '4:0.0.0.0:13939',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 8,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 297,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 5,
+        [Symbol(triggerId)]: 1
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    parser: HTTPParser {
+      '0': null,
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': [Function: bound onParserExecute],
+      '6': [Function: bound onParserTimeout],
+      _headers: [],
+      _url: '',
+      socket: [Circular *1],
+      incoming: [Circular *2],
+      outgoing: null,
+      maxHeaderPairs: 2000,
+      _consumed: true,
+      onIncoming: [Function: bound parserOnIncoming],
+      [Symbol(resource_symbol)]: [HTTPServerAsyncResource]
+    },
+    on: [Function: socketListenerWrap],
+    addListener: [Function: socketListenerWrap],
+    prependListener: [Function: socketListenerWrap],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    _httpMessage: ServerResponse {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: true,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: false,
+      _closed: false,
+      socket: [Circular *1],
+      _header: null,
+      _keepAliveTimeout: 5000,
+      _onPendingData: [Function: bound updateOutgoingData],
+      req: [Circular *2],
+      _sent100: false,
+      _expect_continue: false,
+      _maxRequestsPerSocket: 0,
+      locals: [Object: null prototype] {},
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kEndCalled)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(kUniqueHeaders)]: null
+    },
+    [Symbol(async_id_symbol)]: 11,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: null,
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kSetNoDelay)]: true,
+    [Symbol(kSetKeepAlive)]: false,
+    [Symbol(kSetKeepAliveInitialDelay)]: 0,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0
+  },
+  httpVersionMajor: 1,
+  httpVersionMinor: 0,
+  httpVersion: '1.0',
+  complete: true,
+  rawHeaders: [
+    'Host',
+    'doiloppa.chickenkiller.com',
+    'X-Real-IP',
+    '121.136.244.39',
+    'X-Forwarded-For',
+    '121.136.244.39',
+    'X-Forwarded-Proto',
+    'https',
+    'Connection',
+    'close',
+    'Content-Length',
+    '35',
+    'Pragma',
+    'no-cache',
+    'Cache-Control',
+    'no-cache',
+    'sec-ch-ua',
+    '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+    'sec-ch-ua-mobile',
+    '?0',
+    'sec-ch-ua-platform',
+    '"Windows"',
+    'Upgrade-Insecure-Requests',
+    '1',
+    'User-Agent',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+    'Origin',
+    'https://doiloppa.chickenkiller.com',
+    'Content-Type',
+    'application/x-www-form-urlencoded',
+    'Accept',
+    'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'Sec-Fetch-Site',
+    'same-origin',
+    'Sec-Fetch-Mode',
+    'navigate',
+    'Sec-Fetch-User',
+    '?1',
+    'Sec-Fetch-Dest',
+    'document',
+    'Referer',
+    'https://doiloppa.chickenkiller.com/node/macroProtect.test',
+    'Accept-Encoding',
+    'gzip, deflate, br',
+    'Accept-Language',
+    'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+    'Cookie',
+    'fingerPrint=%7B%22hashId%22:%22eb07cab2a770cb7f45ae9343379414d2%22,%22seed%22:57590%7D'
+  ],
+  rawTrailers: [],
+  aborted: false,
+  upgrade: false,
+  url: '/macroTest.test',
+  method: 'POST',
+  statusCode: null,
+  statusMessage: null,
+  client: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _closeAfterHandlingError: false,
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: false,
+      endEmitted: false,
+      reading: true,
+      constructed: true,
+      sync: false,
+      needReadable: true,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      destroyed: false,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: false,
+      dataEmitted: false,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      timeout: [Function: socketOnTimeout],
+      data: [Function: bound socketOnData],
+      error: [Function: socketOnError],
+      close: [Array],
+      drain: [Function: bound socketOnDrain],
+      resume: [Function: onSocketResume],
+      pause: [Function: onSocketPause]
+    },
+    _eventsCount: 8,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: false,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '4:0.0.0.0:13939',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 8,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 297,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 5,
+        [Symbol(triggerId)]: 1
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '4:0.0.0.0:13939',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 8,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 297,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 5,
+        [Symbol(triggerId)]: 1
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    parser: HTTPParser {
+      '0': null,
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': [Function: bound onParserExecute],
+      '6': [Function: bound onParserTimeout],
+      _headers: [],
+      _url: '',
+      socket: [Circular *1],
+      incoming: [Circular *2],
+      outgoing: null,
+      maxHeaderPairs: 2000,
+      _consumed: true,
+      onIncoming: [Function: bound parserOnIncoming],
+      [Symbol(resource_symbol)]: [HTTPServerAsyncResource]
+    },
+    on: [Function: socketListenerWrap],
+    addListener: [Function: socketListenerWrap],
+    prependListener: [Function: socketListenerWrap],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    _httpMessage: ServerResponse {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: true,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: false,
+      _closed: false,
+      socket: [Circular *1],
+      _header: null,
+      _keepAliveTimeout: 5000,
+      _onPendingData: [Function: bound updateOutgoingData],
+      req: [Circular *2],
+      _sent100: false,
+      _expect_continue: false,
+      _maxRequestsPerSocket: 0,
+      locals: [Object: null prototype] {},
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kEndCalled)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(kUniqueHeaders)]: null
+    },
+    [Symbol(async_id_symbol)]: 11,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: null,
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kSetNoDelay)]: true,
+    [Symbol(kSetKeepAlive)]: false,
+    [Symbol(kSetKeepAliveInitialDelay)]: 0,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0
+  },
+  _consuming: true,
+  _dumped: false,
+  next: [Function: next],
+  baseUrl: '/node',
+  originalUrl: '/node/macroTest.test',
+  _parsedUrl: Url {
+    protocol: null,
+    slashes: null,
+    auth: null,
+    host: null,
+    port: null,
+    hostname: null,
+    hash: null,
+    search: null,
+    query: null,
+    pathname: '/macroTest.test',
+    path: '/macroTest.test',
+    href: '/macroTest.test',
+    _raw: '/macroTest.test'
+  },
+  params: {},
+  query: {},
+  res: <ref *3> ServerResponse {
+    _events: [Object: null prototype] { finish: [Function: bound resOnFinish] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: true,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: null,
+    _hasBody: true,
+    _trailer: '',
+    finished: false,
+    _headerSent: false,
+    _closed: false,
+    socket: <ref *1> Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 8,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: true,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: [Server],
+      _server: [Server],
+      parser: [HTTPParser],
+      on: [Function: socketListenerWrap],
+      addListener: [Function: socketListenerWrap],
+      prependListener: [Function: socketListenerWrap],
+      setEncoding: [Function: socketSetEncoding],
+      _paused: false,
+      _httpMessage: [Circular *3],
+      [Symbol(async_id_symbol)]: 11,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(kSetKeepAlive)]: false,
+      [Symbol(kSetKeepAliveInitialDelay)]: 0,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0
+    },
+    _header: null,
+    _keepAliveTimeout: 5000,
+    _onPendingData: [Function: bound updateOutgoingData],
+    req: [Circular *2],
+    _sent100: false,
+    _expect_continue: false,
+    _maxRequestsPerSocket: 0,
+    locals: [Object: null prototype] {},
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kEndCalled)]: false,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] { 'x-powered-by': [Array] },
+    [Symbol(kUniqueHeaders)]: null
+  },
+  secret: undefined,
+  cookies: {
+    fingerPrint: '{"hashId":"eb07cab2a770cb7f45ae9343379414d2","seed":57590}'
+  },
+  signedCookies: [Object: null prototype] {},
+  body: { test_a: '1', test_b: '2', test_c: '3', test_d: '4' },
+  _body: true,
+  length: undefined,
+  route: Route {
+    path: '/macroTest.test',
+    stack: [ [Layer] ],
+    methods: { post: true }
+  },
+  [Symbol(kCapture)]: false,
+  [Symbol(kHeaders)]: {
+    host: 'doiloppa.chickenkiller.com',
+    'x-real-ip': '121.136.244.39',
+    'x-forwarded-for': '121.136.244.39',
+    'x-forwarded-proto': 'https',
+    connection: 'close',
+    'content-length': '35',
+    pragma: 'no-cache',
+    'cache-control': 'no-cache',
+    'sec-ch-ua': '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+    origin: 'https://doiloppa.chickenkiller.com',
+    'content-type': 'application/x-www-form-urlencoded',
+    accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-user': '?1',
+    'sec-fetch-dest': 'document',
+    referer: 'https://doiloppa.chickenkiller.com/node/macroProtect.test',
+    'accept-encoding': 'gzip, deflate, br',
+    'accept-language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+    cookie: 'fingerPrint=%7B%22hashId%22:%22eb07cab2a770cb7f45ae9343379414d2%22,%22seed%22:57590%7D'
+  },
+  [Symbol(kHeadersCount)]: 48,
+  [Symbol(kTrailers)]: null,
+  [Symbol(kTrailersCount)]: 0
+}
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+<ref *2> IncomingMessage {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 16384,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: [],
+    flowing: true,
+    ended: true,
+    endEmitted: true,
+    reading: false,
+    constructed: true,
+    sync: false,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    errorEmitted: false,
+    emitClose: true,
+    autoDestroy: true,
+    destroyed: false,
+    errored: null,
+    closed: false,
+    closeEmitted: false,
+    defaultEncoding: 'utf8',
+    awaitDrainWriters: null,
+    multiAwaitDrain: false,
+    readingMore: false,
+    dataEmitted: true,
+    decoder: null,
+    encoding: null,
+    [Symbol(kPaused)]: false
+  },
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  socket: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _closeAfterHandlingError: false,
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: false,
+      endEmitted: false,
+      reading: true,
+      constructed: true,
+      sync: false,
+      needReadable: true,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      destroyed: false,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: false,
+      dataEmitted: false,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      timeout: [Function: socketOnTimeout],
+      data: [Function: bound socketOnData],
+      error: [Function: socketOnError],
+      close: [Array],
+      drain: [Function: bound socketOnDrain],
+      resume: [Function: onSocketResume],
+      pause: [Function: onSocketPause]
+    },
+    _eventsCount: 8,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: false,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '4:0.0.0.0:13939',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 8,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 297,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 5,
+        [Symbol(triggerId)]: 1
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '4:0.0.0.0:13939',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 8,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 297,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 5,
+        [Symbol(triggerId)]: 1
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    parser: HTTPParser {
+      '0': null,
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': [Function: bound onParserExecute],
+      '6': [Function: bound onParserTimeout],
+      _headers: [],
+      _url: '',
+      socket: [Circular *1],
+      incoming: [Circular *2],
+      outgoing: null,
+      maxHeaderPairs: 2000,
+      _consumed: true,
+      onIncoming: [Function: bound parserOnIncoming],
+      [Symbol(resource_symbol)]: [HTTPServerAsyncResource]
+    },
+    on: [Function: socketListenerWrap],
+    addListener: [Function: socketListenerWrap],
+    prependListener: [Function: socketListenerWrap],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    _httpMessage: ServerResponse {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: true,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: false,
+      _closed: false,
+      socket: [Circular *1],
+      _header: null,
+      _keepAliveTimeout: 5000,
+      _onPendingData: [Function: bound updateOutgoingData],
+      req: [Circular *2],
+      _sent100: false,
+      _expect_continue: false,
+      _maxRequestsPerSocket: 0,
+      locals: [Object: null prototype] {},
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kEndCalled)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(kUniqueHeaders)]: null
+    },
+    [Symbol(async_id_symbol)]: 28,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: null,
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kSetNoDelay)]: true,
+    [Symbol(kSetKeepAlive)]: false,
+    [Symbol(kSetKeepAliveInitialDelay)]: 0,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0
+  },
+  httpVersionMajor: 1,
+  httpVersionMinor: 0,
+  httpVersion: '1.0',
+  complete: true,
+  rawHeaders: [
+    'Host',
+    'doiloppa.chickenkiller.com',
+    'X-Real-IP',
+    '121.136.244.39',
+    'X-Forwarded-For',
+    '121.136.244.39',
+    'X-Forwarded-Proto',
+    'https',
+    'Connection',
+    'close',
+    'Content-Length',
+    '35',
+    'Pragma',
+    'no-cache',
+    'Cache-Control',
+    'no-cache',
+    'sec-ch-ua',
+    '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+    'sec-ch-ua-mobile',
+    '?0',
+    'sec-ch-ua-platform',
+    '"Windows"',
+    'Upgrade-Insecure-Requests',
+    '1',
+    'Origin',
+    'https://doiloppa.chickenkiller.com',
+    'Content-Type',
+    'application/x-www-form-urlencoded',
+    'User-Agent',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+    'Accept',
+    'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'Sec-Fetch-Site',
+    'same-origin',
+    'Sec-Fetch-Mode',
+    'navigate',
+    'Sec-Fetch-User',
+    '?1',
+    'Sec-Fetch-Dest',
+    'document',
+    'Referer',
+    'https://doiloppa.chickenkiller.com/node/macroProtect.test',
+    'Accept-Encoding',
+    'gzip, deflate, br',
+    'Accept-Language',
+    'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+    'Cookie',
+    'fingerPrint=%7B%22hashId%22:%22eb07cab2a770cb7f45ae9343379414d2%22,%22seed%22:57590%7D'
+  ],
+  rawTrailers: [],
+  aborted: false,
+  upgrade: false,
+  url: '/macroTest.test',
+  method: 'POST',
+  statusCode: null,
+  statusMessage: null,
+  client: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _closeAfterHandlingError: false,
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: false,
+      endEmitted: false,
+      reading: true,
+      constructed: true,
+      sync: false,
+      needReadable: true,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      destroyed: false,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: false,
+      dataEmitted: false,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      timeout: [Function: socketOnTimeout],
+      data: [Function: bound socketOnData],
+      error: [Function: socketOnError],
+      close: [Array],
+      drain: [Function: bound socketOnDrain],
+      resume: [Function: onSocketResume],
+      pause: [Function: onSocketPause]
+    },
+    _eventsCount: 8,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: false,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '4:0.0.0.0:13939',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 8,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 297,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 5,
+        [Symbol(triggerId)]: 1
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '4:0.0.0.0:13939',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 8,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 297,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 5,
+        [Symbol(triggerId)]: 1
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    parser: HTTPParser {
+      '0': null,
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': [Function: bound onParserExecute],
+      '6': [Function: bound onParserTimeout],
+      _headers: [],
+      _url: '',
+      socket: [Circular *1],
+      incoming: [Circular *2],
+      outgoing: null,
+      maxHeaderPairs: 2000,
+      _consumed: true,
+      onIncoming: [Function: bound parserOnIncoming],
+      [Symbol(resource_symbol)]: [HTTPServerAsyncResource]
+    },
+    on: [Function: socketListenerWrap],
+    addListener: [Function: socketListenerWrap],
+    prependListener: [Function: socketListenerWrap],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    _httpMessage: ServerResponse {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: true,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: false,
+      _closed: false,
+      socket: [Circular *1],
+      _header: null,
+      _keepAliveTimeout: 5000,
+      _onPendingData: [Function: bound updateOutgoingData],
+      req: [Circular *2],
+      _sent100: false,
+      _expect_continue: false,
+      _maxRequestsPerSocket: 0,
+      locals: [Object: null prototype] {},
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kEndCalled)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(kUniqueHeaders)]: null
+    },
+    [Symbol(async_id_symbol)]: 28,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: null,
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kSetNoDelay)]: true,
+    [Symbol(kSetKeepAlive)]: false,
+    [Symbol(kSetKeepAliveInitialDelay)]: 0,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0
+  },
+  _consuming: true,
+  _dumped: false,
+  next: [Function: next],
+  baseUrl: '/node',
+  originalUrl: '/node/macroTest.test',
+  _parsedUrl: Url {
+    protocol: null,
+    slashes: null,
+    auth: null,
+    host: null,
+    port: null,
+    hostname: null,
+    hash: null,
+    search: null,
+    query: null,
+    pathname: '/macroTest.test',
+    path: '/macroTest.test',
+    href: '/macroTest.test',
+    _raw: '/macroTest.test'
+  },
+  params: {},
+  query: {},
+  res: <ref *3> ServerResponse {
+    _events: [Object: null prototype] { finish: [Function: bound resOnFinish] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: true,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: null,
+    _hasBody: true,
+    _trailer: '',
+    finished: false,
+    _headerSent: false,
+    _closed: false,
+    socket: <ref *1> Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 8,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: true,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: [Server],
+      _server: [Server],
+      parser: [HTTPParser],
+      on: [Function: socketListenerWrap],
+      addListener: [Function: socketListenerWrap],
+      prependListener: [Function: socketListenerWrap],
+      setEncoding: [Function: socketSetEncoding],
+      _paused: false,
+      _httpMessage: [Circular *3],
+      [Symbol(async_id_symbol)]: 28,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(kSetKeepAlive)]: false,
+      [Symbol(kSetKeepAliveInitialDelay)]: 0,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0
+    },
+    _header: null,
+    _keepAliveTimeout: 5000,
+    _onPendingData: [Function: bound updateOutgoingData],
+    req: [Circular *2],
+    _sent100: false,
+    _expect_continue: false,
+    _maxRequestsPerSocket: 0,
+    locals: [Object: null prototype] {},
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kEndCalled)]: false,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] { 'x-powered-by': [Array] },
+    [Symbol(kUniqueHeaders)]: null
+  },
+  secret: undefined,
+  cookies: {
+    fingerPrint: '{"hashId":"eb07cab2a770cb7f45ae9343379414d2","seed":57590}'
+  },
+  signedCookies: [Object: null prototype] {},
+  body: { test_a: '1', test_b: '2', test_c: '3', test_d: '4' },
+  _body: true,
+  length: undefined,
+  route: Route {
+    path: '/macroTest.test',
+    stack: [ [Layer] ],
+    methods: { post: true }
+  },
+  [Symbol(kCapture)]: false,
+  [Symbol(kHeaders)]: {
+    host: 'doiloppa.chickenkiller.com',
+    'x-real-ip': '121.136.244.39',
+    'x-forwarded-for': '121.136.244.39',
+    'x-forwarded-proto': 'https',
+    connection: 'close',
+    'content-length': '35',
+    pragma: 'no-cache',
+    'cache-control': 'no-cache',
+    'sec-ch-ua': '"Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'upgrade-insecure-requests': '1',
+    origin: 'https://doiloppa.chickenkiller.com',
+    'content-type': 'application/x-www-form-urlencoded',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+    accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-user': '?1',
+    'sec-fetch-dest': 'document',
+    referer: 'https://doiloppa.chickenkiller.com/node/macroProtect.test',
+    'accept-encoding': 'gzip, deflate, br',
+    'accept-language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+    cookie: 'fingerPrint=%7B%22hashId%22:%22eb07cab2a770cb7f45ae9343379414d2%22,%22seed%22:57590%7D'
+  },
+  [Symbol(kHeadersCount)]: 48,
+  [Symbol(kTrailers)]: null,
+  [Symbol(kTrailersCount)]: 0
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `babel-node src/server.js`[39m
+
+      ##########################################################
+        [started at : 2023. 2. 16. 목요일 오후 4:05:17]
         😎 Wellcome to DOIL's dev SERVER (by express) 😎
         🐳 Server listening on local port 13939
         site : http://doiloppa.chickenkiller.com:80/node/
@@ -19,29 +1583,373 @@
 [32m[nodemon] starting `babel-node src/server.js`[39m
 
       ##########################################################
-        [started at : 2023. 2. 16. 목요일 오전 1:40:08]
+        [started at : 2023. 2. 16. 목요일 오후 4:05:25]
         😎 Wellcome to DOIL's dev SERVER (by express) 😎
         🐳 Server listening on local port 13939
         site : http://doiloppa.chickenkiller.com:80/node/
       ##########################################################
       
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `babel-node src/server.js`[39m
 
       ##########################################################
-        [started at : 2023. 2. 16. 목요일 오전 1:40:33]
+        [started at : 2023. 2. 16. 목요일 오후 4:05:57]
         😎 Wellcome to DOIL's dev SERVER (by express) 😎
         🐳 Server listening on local port 13939
         site : http://doiloppa.chickenkiller.com:80/node/
       ##########################################################
       
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+Error: /Users/doil/4dev/nodeJs/projects/dJS-sandbox/src/views/dModules/macroProtect/macroTest.pug:6:42
+    4|     title Macro Test
+    5|     script.
+  > 6|          const data = !{JSON.stringify({ #{params} })}
+------------------------------------------------^
+    7|          console.log(data.foo)
+    8|   body
+    9|     h1= title
+
+Syntax Error: Unexpected character '#'
+    at makeError (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-error/index.js:34:13)
+    at Lexer.error (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:62:15)
+    at Lexer.assertExpression (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:96:12)
+    at Lexer.addText (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:627:12)
+    at Lexer.<anonymous> (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1596:16)
+    at Array.forEach (<anonymous>)
+    at Lexer.pipelessText (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1589:14)
+    at Lexer.callLexerFunction (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1647:23)
+    at Lexer.dot (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:674:12)
+    at Lexer.callLexerFunction (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1647:23)
+    at Lexer.advance (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1684:12)
+    at Lexer.callLexerFunction (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1647:23)
+    at Lexer.getTokens (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1706:12)
+    at lex (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:12:42)
+    at Object.lex (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:104:9)
+    at Function.loadString [as string] (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-load/index.js:53:24)
+    at compileBody (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:82:18)
+    at Object.exports.compile (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:269:16)
+    at handleTemplateCache (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:242:25)
+    at Object.exports.renderFile (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:454:10)
+    at Object.exports.renderFile (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:444:21)
+    at View.exports.__express [as engine] (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:493:11)
+    at View.render (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/application.js:657:10)
+    at Function.render (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/response.js:1039:7)
+    at /Users/doil/4dev/nodeJs/projects/dJS-sandbox/src/server.js:122:7
+    at Layer.handle [as handle_request] (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/index.js:280:10)
+    at /Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/raw-body/index.js:231:16)
+    at done (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/raw-body/index.js:220:7)
+    at IncomingMessage.onEnd (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/raw-body/index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+Error: /Users/doil/4dev/nodeJs/projects/dJS-sandbox/src/views/dModules/macroProtect/macroTest.pug:6:42
+    4|     title Macro Test
+    5|     script.
+  > 6|          const data = !{JSON.stringify({ #{params} })}
+------------------------------------------------^
+    7|          console.log(data.foo)
+    8|   body
+    9|     h1= title
+
+Syntax Error: Unexpected character '#'
+    at makeError (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-error/index.js:34:13)
+    at Lexer.error (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:62:15)
+    at Lexer.assertExpression (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:96:12)
+    at Lexer.addText (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:627:12)
+    at Lexer.<anonymous> (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1596:16)
+    at Array.forEach (<anonymous>)
+    at Lexer.pipelessText (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1589:14)
+    at Lexer.callLexerFunction (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1647:23)
+    at Lexer.dot (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:674:12)
+    at Lexer.callLexerFunction (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1647:23)
+    at Lexer.advance (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1684:12)
+    at Lexer.callLexerFunction (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1647:23)
+    at Lexer.getTokens (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1706:12)
+    at lex (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:12:42)
+    at Object.lex (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:104:9)
+    at Function.loadString [as string] (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-load/index.js:53:24)
+    at compileBody (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:82:18)
+    at Object.exports.compile (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:269:16)
+    at handleTemplateCache (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:242:25)
+    at Object.exports.renderFile (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:454:10)
+    at Object.exports.renderFile (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:444:21)
+    at View.exports.__express [as engine] (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:493:11)
+    at View.render (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/application.js:657:10)
+    at Function.render (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/response.js:1039:7)
+    at /Users/doil/4dev/nodeJs/projects/dJS-sandbox/src/server.js:122:7
+    at Layer.handle [as handle_request] (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/index.js:280:10)
+    at /Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/raw-body/index.js:231:16)
+    at done (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/raw-body/index.js:220:7)
+    at IncomingMessage.onEnd (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/raw-body/index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+Error: /Users/doil/4dev/nodeJs/projects/dJS-sandbox/src/views/dModules/macroProtect/macroTest.pug:6:42
+    4|     title Macro Test
+    5|     script.
+  > 6|          const data = !{JSON.stringify({ #{params} })}
+------------------------------------------------^
+    7|          console.log(data)
+    8|   body
+    9|     h1= title
+
+Syntax Error: Unexpected character '#'
+    at makeError (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-error/index.js:34:13)
+    at Lexer.error (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:62:15)
+    at Lexer.assertExpression (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:96:12)
+    at Lexer.addText (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:627:12)
+    at Lexer.<anonymous> (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1596:16)
+    at Array.forEach (<anonymous>)
+    at Lexer.pipelessText (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1589:14)
+    at Lexer.callLexerFunction (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1647:23)
+    at Lexer.dot (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:674:12)
+    at Lexer.callLexerFunction (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1647:23)
+    at Lexer.advance (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1684:12)
+    at Lexer.callLexerFunction (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1647:23)
+    at Lexer.getTokens (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:1706:12)
+    at lex (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-lexer/index.js:12:42)
+    at Object.lex (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:104:9)
+    at Function.loadString [as string] (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug-load/index.js:53:24)
+    at compileBody (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:82:18)
+    at Object.exports.compile (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:269:16)
+    at handleTemplateCache (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:242:25)
+    at Object.exports.renderFile (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:454:10)
+    at Object.exports.renderFile (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:444:21)
+    at View.exports.__express [as engine] (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/pug/lib/index.js:493:11)
+    at View.render (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/application.js:657:10)
+    at Function.render (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/response.js:1039:7)
+    at /Users/doil/4dev/nodeJs/projects/dJS-sandbox/src/server.js:122:7
+    at Layer.handle [as handle_request] (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/express/lib/router/index.js:280:10)
+    at /Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/raw-body/index.js:231:16)
+    at done (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/raw-body/index.js:220:7)
+    at IncomingMessage.onEnd (/Users/doil/4dev/nodeJs/projects/dJS-sandbox/node_modules/raw-body/index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `babel-node src/server.js`[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `babel-node src/server.js`[39m
 
       ##########################################################
-        [started at : 2023. 2. 16. 목요일 오전 1:40:42]
+        [started at : 2023. 2. 16. 목요일 오후 4:15:37]
         😎 Wellcome to DOIL's dev SERVER (by express) 😎
         🐳 Server listening on local port 13939
         site : http://doiloppa.chickenkiller.com:80/node/
       ##########################################################
       
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use 0.0.0.0:13939
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at doListen (node:net:1682:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1512:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 13939
+}
+
+Node.js v18.12.1
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }
+eb07cab2a770cb7f45ae9343379414d2
+user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+referer : https://doiloppa.chickenkiller.com/node/macroProtect.test
+client-ip : 121.136.244.39
+client is : user
+{ test_a: '1', test_b: '2', test_c: '3', test_d: '4' }

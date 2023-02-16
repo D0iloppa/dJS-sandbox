@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Macro Test
+    script.
+        const params = JSON.parse(("#{params}").replace(/&quot;/g, '"'));
+        console.log(params);
+  body
+    h1= title
+    p Welcome to the Macro Test page
+    p The IP address of the client is 
+        b #{ipAddress}
+    p The User_agent of the client is 
+        b #{user_agent}
+    p The Referer of the client is 
+        b #{referer}
+    p The client is may 
+        b #{botChk}

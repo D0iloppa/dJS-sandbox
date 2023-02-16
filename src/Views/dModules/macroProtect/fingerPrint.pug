@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        // 제이쿼리 설치
+        script(src="https://code.jquery.com/jquery-3.6.3.min.js",
+               integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=",
+               crossorigin="anonymous")
+        script(src="./module/fingerPrint/picasso.js")
+        title wellcome to do JS sandbox PAGE : fingerprint | bot dection
+    body 
+        div
+            h1 Google's picasso like fingerprint (google algorithem use version)
+            button(onclick="{expireFingerPrint(); location.reload();}") expire Fingerprint
+            div(style="margin-top:10px;" class="picasso")
+                div(class="content")
+        hr
+        div 
+            h1 BOT DETECTION : fingerprintJS (open source)
+            div(class="log")
+                div(class="log-content" style="margin-top:10px; border:1px solid; background-color:lightgray")
+    script(src="./module/fingerPrint/fingerprint.js")

@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        // 제이쿼리 설치
+        script(src="https://code.jquery.com/jquery-3.6.3.min.js",
+               integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=",
+               crossorigin="anonymous")
+        script(src="./module/macroProtect/macroProtect.js")
+        title wellcome to do JS sandbox PAGE : macroProtect Page
+    body 
+        button(onClick="location.href='../node/'") backHome
+        div
+            h1 macro detecting test
+            div fingerprinting
+                div(class="picasso")
+        hr
+        div(class="inputForm")
+            form(action="macroTest.test" method="post")
+                div(style="display:flex")
+                    strong value a : &nbsp;
+                    input(name="test_a")
+                div(style="display:flex")
+                    strong value b : &nbsp;
+                    input(name="test_b")
+                div(style="display:flex")
+                    strong value c : &nbsp;
+                    input(name="test_c")
+                div(style="display:flex")
+                    strong value d : &nbsp;
+                    input(name="test_d")
+                button(style="margin-top:10px;" type="submit") 테스트
+    script(src="./module/macroProtect/documentReady.js")
